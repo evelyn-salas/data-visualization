@@ -1,0 +1,50 @@
+---
+title: "World Bank Indicator Visualizations"
+author: "Evelyn Salas"
+date: "2/23/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+source("analysis.R")
+```
+
+## CO2 Emissions by Country
+
+```{r CO2_Emissions, echo=FALSE}
+plot(top_10_co2_plot)
+```
+
+The countries who have manufacturing economies tend to have high carbon emissions.
+
+## US Income Equality over Time
+```{r US_Income_Over_Time, echo=FALSE}
+plot(us_wealth_plot)
+```
+
+Income inequality in the US has gotten a lot more extreme in the past 40 years. Currently, the top 10% own more wealth than the bottom 40%.
+
+## Health Expenditures by Country
+
+```{r Health_Expenditures_by_Country, echo=FALSE}
+plot(health_costs_plot)
+```
+
+More spending on healthcare does not necessarily mean that people recieve better care. The US spends more on healthcare than almost any other country, but many people are still struggling to get care.
+
+## Changes in Forestation around the World
+```{r Changes_in_Forestation, echo=FALSE}
+plot(world_forest_plot)
+```
+
+Most of the world, with the exception of a few south east asian countries, has seen a significant change in their forested area in the past 20 years.
+
+### Teen Pregnancy and Literacy Rates in India Over Time
+
+```{r Teen_Pregnancy_Literacy_Rates, echo=FALSE}
+plot(literacy_and_teen_pregnancy_IND_plot)
+```
+
+My plot attempts to answer the question: what is the relationship between literacy rate and teen pregnancy in India? The data seems to imply that there is a negative relationship between the two. I choose to look at one specific country over time because I knew that India had seen a very big spike in literacy rates in the past 40 years, so I figured it would interesting to see if this spike coecided with a change in the teen pregnancy rateh. I used a line plot because it made it really easy to see the relationship between the two values over a period of time. This visual is effective because it very simple and clear, which makes it easy to read. 
+
